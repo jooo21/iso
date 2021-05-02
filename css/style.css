@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,900;1,700&family=Poiret+One&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/**font-family: 'Bodoni Moda', serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Spartan', sans-serif;*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.hidden {
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 0px; }
+
+table, th, td {
+  border-collapse: collapse; }
+
+fieldset {
+  border: none; }
+
+input {
+  text-decoration: none; }
+
+body {
+  background: #f2f2f2; }
+
+#header {
+  width: 0%;
+  height: 170px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden; }
+  #header h1 {
+    font: 700 60px/1 'Bodoni Moda', serif;
+    color: #333;
+    letter-spacing: -1px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 300%);
+    transition: 0.5s; }
+  #header .filter {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    transition: 0.5s; }
+    #header .filter > li {
+      float: left;
+      width: 25%;
+      height: 100%;
+      position: relative;
+      transform: translateY(50%);
+      transition: 0.5s;
+      box-sizing: border-box; }
+      #header .filter > li:nth-of-type(1) {
+        transition-delay: 0.2s; }
+      #header .filter > li:nth-of-type(2) {
+        transition-delay: 0.4s; }
+      #header .filter > li:nth-of-type(3) {
+        transition-delay: 0.6s; }
+      #header .filter > li:nth-of-type(4) {
+        transition-delay: 0.8s; }
+      #header .filter > li > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        font: 800 15px/60px "Poiret One";
+        color: #666;
+        letter-spacing: 5px;
+        position: relative;
+        transition: 0.5s;
+        text-align: center; }
+      #header .filter > li:hover > a {
+        color: #c92800; }
+  #header .subMenu {
+    width: 30px;
+    height: 30px;
+    background: #c92800;
+    position: fixed;
+    right: 0px;
+    top: 30px;
+    transition: 0.5s; }
+    #header .subMenu i {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: 26px;
+      color: #f2f2f2;
+      transform: translate(-50%, -50%) scale(0.2);
+      transition: 0.5s; }
+    #header .subMenu:hover i, #header .subMenu.on i {
+      color: #c92800;
+      transform: translate(-50%, -50%) scale(0.4, 0.5) rotate(180deg); }
+  #header.on h1 {
+    transform: translate(-50%, 0%); }
+  #header.on .filter > li {
+    transform: translateY(0%); }
+  #header.small {
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    height: 60px;
+    width: 100%;
+    background: none;
+    background: #c92800; }
+    #header.small h1 {
+      width: 20%;
+      left: 12%;
+      top: 0%;
+      color: #f2f2f2;
+      font: bold 30px/60px 'Bodoni Moda', serif; }
+    #header.small .filter {
+      width: 70%;
+      top: 0%;
+      left: 20%; }
+      #header.small .filter li a {
+        font: 800 12px/60px "Poiret One";
+        color: #f2f2f2; }
+    #header.small .subMenu {
+      width: 10%;
+      height: 60px;
+      display: block;
+      right: 0%;
+      top: 0px;
+      background: #f2f2f2; }
+      #header.small .subMenu i {
+        color: #999;
+        transform: translate(-50%, -50%) scale(0.9, 1) rotate(180deg); }
+
+aside {
+  width: 30%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  left: -30%;
+  backdrop-filter: blur(15px);
+  transition: 1s; }
+  aside.on {
+    left: 0%; }
+
+.content {
+  width: 100%;
+  margin: 100px auto 200px; }
+  .content .wrap {
+    width: 1200px;
+    margin: 0px auto; }
+    .content .wrap .item {
+      width: 300px;
+      height: 200px;
+      float: left;
+      padding: 10px;
+      box-sizing: border-box; }
+      .content .wrap .item > div {
+        width: 100%;
+        height: 100%;
+        background: #aaa;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 30px 20px; }
+        .content .wrap .item > div h2 {
+          font: 400 20px/1 "Spartan";
+          letter-spacing: 1px;
+          margin-bottom: 30px; }
+        .content .wrap .item > div > div {
+          font: 200 13px/1.4 "Spartan"; }
+      .content .wrap .item:nth-of-type(1) {
+        width: 600px;
+        height: 400px; }
+      .content .wrap .item:nth-of-type(2) {
+        width: 300px;
+        height: 400px; }
+      .content .wrap .item:nth-of-type(3) {
+        width: 300px;
+        height: 400px; }
+        .content .wrap .item:nth-of-type(3) > div {
+          background: #c92800; }
+      .content .wrap .item:nth-of-type(4) {
+        height: 400px; }
+      .content .wrap .item:nth-of-type(5) {
+        height: 200px; }
+      .content .wrap .item:nth-of-type(6) {
+        height: 200px; }
+      .content .wrap .item:nth-of-type(7) {
+        height: 200px; }
+      .content .wrap .item:nth-of-type(8) {
+        height: 400px; }
+      .content .wrap .item:nth-of-type(9) {
+        height: 400px; }
+      .content .wrap .item:nth-of-type(10) {
+        height: 200px; }
+  .content #round {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 340px;
+    left: 10%;
+    border-radius: 50%;
+    border: 1px solid #0b5c0b;
+    box-sizing: border-box;
+    padding: 32px;
+    overflow: hidden; }
+    .content #round p {
+      width: 100%;
+      height: 100%;
+      letter-spacing: 30px;
+      text-align: left;
+      font: bold 15px/1.5 "Poiret One";
+      color: #0b5c0b; }
+
+@media screen and (max-width: 999px) {
+  .filter {
+    width: 90%; }
+    .filter .item {
+      width: 33.3333%; }
+    .filter article:nth-of-type(2) {
+      width: 66.666%; }
+    .filter article:nth-of-type(8) {
+      width: 66.666%; } }
+@media screen and (max-width: 499px) {
+  .filter {
+    width: 90%; }
+    .filter .item {
+      width: 50%; }
+    .filter article:nth-of-type(2) {
+      width: 100%; }
+    .filter article:nth-of-type(8) {
+      width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
