@@ -158,11 +158,11 @@ aside {
 }
 .content {
     width:100%;
-    margin:100px auto;
+    margin:100px auto 200px;
     .wrap{
-            padding:0px 180px;
+            padding:0px 220px;
             .item {
-                width:320px;height:200px;float:left;
+                width:300px;height:200px;float:left;
                 padding:10px; box-sizing: border-box;
                 transition:1s;
                 >div {   
@@ -180,10 +180,10 @@ aside {
                     }
                 }
 
-                $h1:200px;
-                $h2:400px;
-                $w1:320px;
-                $w2:640px;
+                $h1:230px;
+                $h2:460px;
+                $w1:300px;
+                $w2:600px;
                 &:nth-of-type(1) {
                     width:$w2;
                     height: $h2;
@@ -215,7 +215,7 @@ aside {
                     }
                 }
                 &:nth-of-type(6) {
-                    height: $h2;
+                    height: $h1;
                     >div{
                         background: url(../img/iso7.png) no-repeat center/cover;
                     }
@@ -225,7 +225,7 @@ aside {
                     height: $h1;
                 }
                 &:nth-of-type(8) {
-                    height: $h2;
+                    height: $h1;
                     >div{
                         background: url(../img/iso9.png) no-repeat center/cover;
                     }
@@ -309,6 +309,7 @@ aside {
                     }
                 }
                 &:nth-of-type(23) {
+                    width:$w2;
                     height: $h1;
                 }
                 &:nth-of-type(24) {
@@ -330,7 +331,7 @@ aside {
     position:absolute;
     top:230px;left:12%;
     border-radius: 50%;
-    border:1px solid #0b5c0b;
+    border:1px solid #70f5ee;
     box-sizing: border-box;
     padding:32px;
     overflow: hidden;
@@ -339,12 +340,6 @@ aside {
         letter-spacing: 30px;
         text-align: left;
         font: bold 15px/1.5 "Poiret One";
-        color:#0b5c0b;
+        color:#70f5ee;
     }
-}
-        
-
-@media screen and (max-width:999px) {
-}
-@media screen and (max-width:499px) {
 }
