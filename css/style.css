@@ -136,13 +136,13 @@ body {
         transform: translate(-50%, -50%) scale(0.9, 1) rotate(180deg); }
 
 aside {
-  width: 30%;
+  width: 40%;
   height: 100vh;
   background: rgba(255, 255, 255, 0.2);
   position: fixed;
   z-index: 3;
   top: 0px;
-  left: -30%;
+  left: -40%;
   backdrop-filter: blur(15px);
   transition: 1s; }
   aside.on {
@@ -150,16 +150,16 @@ aside {
 
 .content {
   width: 100%;
-  margin: 100px auto 200px; }
+  margin: 100px auto; }
   .content .wrap {
-    width: 1200px;
-    margin: 0px auto; }
+    padding: 0px 180px; }
     .content .wrap .item {
-      width: 300px;
+      width: 320px;
       height: 200px;
       float: left;
       padding: 10px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      transition: 1s; }
       .content .wrap .item > div {
         width: 100%;
         height: 100%;
@@ -171,69 +171,123 @@ aside {
           font: 400 20px/1 "Spartan";
           letter-spacing: 1px;
           margin-bottom: 30px; }
-        .content .wrap .item > div > div {
+        .content .wrap .item > div > p {
           font: 200 13px/1.4 "Spartan"; }
       .content .wrap .item:nth-of-type(1) {
-        width: 600px;
+        width: 640px;
         height: 400px; }
+        .content .wrap .item:nth-of-type(1) > div {
+          background: url(../img/iso2.png) no-repeat center/cover; }
       .content .wrap .item:nth-of-type(2) {
-        width: 300px;
-        height: 400px; }
+        width: 320px;
+        height: 200px; }
+        .content .wrap .item:nth-of-type(2) > div {
+          background: url(../img/iso6.png) no-repeat center/cover; }
       .content .wrap .item:nth-of-type(3) {
-        width: 300px;
+        width: 320px;
         height: 400px; }
         .content .wrap .item:nth-of-type(3) > div {
           background: #c92800; }
       .content .wrap .item:nth-of-type(4) {
-        height: 400px; }
+        height: 200px; }
       .content .wrap .item:nth-of-type(5) {
-        height: 200px; }
+        height: 400px; }
+        .content .wrap .item:nth-of-type(5) > div {
+          background: url(../img/iso5.png) no-repeat center/cover; }
       .content .wrap .item:nth-of-type(6) {
-        height: 200px; }
+        height: 400px; }
+        .content .wrap .item:nth-of-type(6) > div {
+          background: url(../img/iso7.png) no-repeat center/cover; }
       .content .wrap .item:nth-of-type(7) {
+        width: 640px;
         height: 200px; }
       .content .wrap .item:nth-of-type(8) {
         height: 400px; }
+        .content .wrap .item:nth-of-type(8) > div {
+          background: url(../img/iso9.png) no-repeat center/cover; }
       .content .wrap .item:nth-of-type(9) {
         height: 400px; }
+        .content .wrap .item:nth-of-type(9) > div {
+          background: url(../img/iso16.png) no-repeat center/cover; }
       .content .wrap .item:nth-of-type(10) {
+        width: 320px;
+        height: 400px; }
+      .content .wrap .item:nth-of-type(11) {
+        width: 640px;
         height: 200px; }
-  .content #round {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    top: 340px;
-    left: 10%;
-    border-radius: 50%;
-    border: 1px solid #0b5c0b;
-    box-sizing: border-box;
-    padding: 32px;
-    overflow: hidden; }
-    .content #round p {
-      width: 100%;
-      height: 100%;
-      letter-spacing: 30px;
-      text-align: left;
-      font: bold 15px/1.5 "Poiret One";
-      color: #0b5c0b; }
+      .content .wrap .item:nth-of-type(12) {
+        width: 640px;
+        height: 200px; }
+        .content .wrap .item:nth-of-type(12) > div {
+          background: url(../img/iso9.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(13) {
+        width: 320px;
+        height: 400px; }
+        .content .wrap .item:nth-of-type(13) > div {
+          background: url(../img/iso11.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(14) {
+        width: 640px;
+        height: 400px; }
+        .content .wrap .item:nth-of-type(14) > div {
+          background: url(../img/iso10.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(15) {
+        height: 200px; }
+        .content .wrap .item:nth-of-type(15) > div {
+          background: url(../img/iso1.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(16) {
+        height: 200px; }
+      .content .wrap .item:nth-of-type(17) {
+        width: 320px;
+        height: 200px; }
+        .content .wrap .item:nth-of-type(17) > div {
+          background: url(../img/iso4.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(18) {
+        width: 640px;
+        height: 200px; }
+        .content .wrap .item:nth-of-type(18) > div {
+          background: url(../img/iso13.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(19) {
+        height: 200px; }
+      .content .wrap .item:nth-of-type(20) {
+        width: 320px;
+        height: 200px; }
+      .content .wrap .item:nth-of-type(21) {
+        width: 320px;
+        height: 400px; }
+        .content .wrap .item:nth-of-type(21) > div {
+          background: url(../img/iso12.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(22) {
+        height: 400px; }
+        .content .wrap .item:nth-of-type(22) > div {
+          background: url(../img/iso14.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(23) {
+        height: 200px; }
+      .content .wrap .item:nth-of-type(24) {
+        width: 640px;
+        height: 200px; }
+        .content .wrap .item:nth-of-type(24) > div {
+          background: url(../img/iso3.png) no-repeat center/cover; }
+      .content .wrap .item:nth-of-type(25) {
+        width: 320px;
+        height: 200px; }
 
-@media screen and (max-width: 999px) {
-  .filter {
-    width: 90%; }
-    .filter .item {
-      width: 33.3333%; }
-    .filter article:nth-of-type(2) {
-      width: 66.666%; }
-    .filter article:nth-of-type(8) {
-      width: 66.666%; } }
-@media screen and (max-width: 499px) {
-  .filter {
-    width: 90%; }
-    .filter .item {
-      width: 50%; }
-    .filter article:nth-of-type(2) {
-      width: 100%; }
-    .filter article:nth-of-type(8) {
-      width: 100%; } }
+#round {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 230px;
+  left: 12%;
+  border-radius: 50%;
+  border: 1px solid #0b5c0b;
+  box-sizing: border-box;
+  padding: 32px;
+  overflow: hidden; }
+  #round p {
+    width: 100%;
+    height: 100%;
+    letter-spacing: 30px;
+    text-align: left;
+    font: bold 15px/1.5 "Poiret One";
+    color: #0b5c0b; }
 
 /*# sourceMappingURL=style.css.map */

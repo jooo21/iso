@@ -11,7 +11,7 @@ $(document).ready(function(){
     $(window).on("scroll", function(){
         var scroll = $(this).scrollTop();
 
-        if(scroll > 60 ){
+        if(scroll > 300 ){
             $("#header").addClass("small");
         }else {
             $("#header").removeClass("small");

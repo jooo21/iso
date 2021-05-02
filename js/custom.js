@@ -3,10 +3,11 @@ $(document).ready(function(){
     //isotope
 	var $wrap = $(".wrap");
 	var $filter = $(".filter a");	
+
 	$wrap.isotope({	
 		 itemSelector : '.item',
 		 masonry : {
-			  columnWidth : 300,
+			  columnWidth : 320,
 			  rowHeight: 200
 			}		  
 	});	
